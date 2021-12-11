@@ -1,0 +1,32 @@
+import math
+
+print("welcome to this calc,it can add,subtract,multiply,divide and also "
+      "find the remainder when two numbers are divided ")
+print("but only 2 integer numbers at a time"
+      " ***in case you want to find remainder first give big number then the small number for accurate resuls")
+num1 = int(input("enter first number"))
+sign = input("which operation u would like to do now ? + , -,*,/,%")
+num2 = int(input("alright enter the 2nd number"))
+re = num1 + num2
+su = num1 - num2
+sub = num2 - num1
+mu = num1 * num2
+di = num1 / num2
+er = num1 % num2
+
+if sign == '+':
+    print(num1, "+", num2, "=", re)
+
+if sign == '-' and num1 > num2:
+    print(num1, "-", num2, "=", su)
+
+if sign == '*':
+    print(num1, "*", num2, "=", mu)
+
+if sign == '/':
+    print(num1, "/", num2, "=", di)
+
+if sign == '%':
+    print("the remainder of ", num1, "%", num2, "=", er)
+
+print("thank u for using my calc  "
